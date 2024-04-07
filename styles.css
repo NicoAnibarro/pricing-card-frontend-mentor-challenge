@@ -1,0 +1,123 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Karla';
+    font-size: 16px;
+    margin: 20px;
+}
+
+h2, h3, h1, h4, p {
+    margin: 0;
+}
+
+/*Las siguientes instrucciones dicen que todos (*) todos los que estan antes,
+y todos los que estan despues,
+heredarán el box-sizing declarado*/
+
+*,*:before, *:after{
+   box-sizing: inherit;  
+}
+
+#container{
+    width: 600px;
+    height: 400px;
+    box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+    border-radius: 5px;
+    overflow: hidden; /*Esto le dice que si hay algo fuera de los bordes, que lo esconda*/
+}
+
+.bottom{
+    display: flex;
+    width: 100%;
+    height: 55%;
+    color: whitesmoke;
+}
+
+.top{
+    width: 100%;
+    height: 45%;
+    padding: 30px;
+}
+
+.b-left{
+    flex: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: #3ac7bb;
+    padding: 25px;
+}
+
+.b-right{
+    flex: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: #38a69d;
+    padding: 25px;
+}
+
+.montly{
+    color: aquamarine;
+    margin-bottom: 10px;
+}
+
+.price{
+    display: inline-block;
+    /*font-size: 1.4rem;*/
+
+}
+
+.per-month{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: -3px;
+    opacity: 0.7;
+}
+
+.title{
+    font-size: 25px;
+    color:#38a69d;
+    margin-bottom: 15px;
+}
+
+.sub-title{
+    font-size: 20px;
+    color: green ;
+    margin-bottom: 10px;
+}
+
+.first-paragraph{
+    color: grey;
+}
+
+.button{
+    color: whitesmoke;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 40px;
+}
+
+#price-container{
+    margin-bottom: 10px;
+}
+
+#list{
+    padding: 0;
+    list-style: none;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+#list li{
+    margin: 2px;
+}
+
+/* Pseudoclase: */
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(37, 84, 146);
+    transform: scale(1.2);
+}
